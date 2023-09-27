@@ -93,10 +93,10 @@
 }
 @media (min-width:320px) {
     :root {
-        --fs-14: 10px;
+        --fs-14: 12px;
         --fs-16: 16px;
-        --fs-18: 12px;
-        --fs-20: 14px;
+        --fs-18: 14px;
+        --fs-20: 16px;
         --fs-22: 22px;
         --fs-28: 28px;
         --fs-60: 40px;
@@ -105,7 +105,7 @@
 }
 @media (min-width:576px) {
     :root {
-        --fs-14: 12px;
+        --fs-14: 14px;
         --fs-16: 16px;
         --fs-18: 14px;
         --fs-20: 16px;
@@ -117,7 +117,7 @@
 }
 @media (min-width:768px) {
     :root {
-        --fs-14: 12px;
+        --fs-14: 14px;
         --fs-16: 16px;
         --fs-18: 16px;
         --fs-20: 18px;
