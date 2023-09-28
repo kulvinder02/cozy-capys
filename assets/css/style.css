@@ -165,7 +165,8 @@ ul {
 .cloud-para {
     text-align: center;
     color: #565656;
-    max-width: 650px;
+    /* max-width: 650px; */
+    max-width:714px;
 }
 
 .sllping-teddy {
