@@ -46,22 +46,6 @@ ul {
 ul {
     padding-left: unset !important;
 }
-
-.herotree-img1 {
-    position: absolute;
-    top: 37%;
-    right: -1%;
-    z-index: 10;
-}
-
-
-.herotree-img2 {
-    position: absolute;
-    top: 32%;
-    left: -1%;
-    z-index: 10;
-}
-
 .grass-img {
     position: absolute;
     bottom: -7%;
@@ -106,6 +90,7 @@ ul {
 .heding-sdw {
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
     margin-right: -37px;
+     z-index: 2;
 }
 
 .heding-sdw2 {
@@ -137,7 +122,7 @@ ul {
 .cloud2 {
     position: absolute;
     top: 12%;
-    right: 16%;
+   left: 0%;
 }
 
 .cloud4 {
@@ -158,9 +143,9 @@ ul {
 
 .blue-bg {
     background: #93D8FD;
-    background-image: url(../images/blue-section3.png);
-    background-position: 100% 100%;
-    background-size: cover;
+    background-image: url(../images/blue-bg.png);
+    background-position:cover;
+    background-size:  100% 100%;
     width: 100% !important;
 }
 
@@ -248,9 +233,10 @@ ul {
     background: #5BA72B;
 }
 
-.card-box:hover svg path {
+.card-box:hover .card-svg svg path {
     z-index: 1;
     fill: white !important;
+    opacity: 1 !important;
 }
 
 .m-unset {
@@ -324,6 +310,7 @@ ul {
     bottom: -22%;
     left: -20%;
     z-index: 2;
+    display: none;
 }
 
 .green-tree2 {
@@ -426,10 +413,10 @@ ul {
 
 .pink-nft {
     position: absolute;
-    bottom: -4%;
+    bottom: -4.6%;
     right: 0;
     z-index: 50;
-    transform: rotate(-7deg);
+    transform: rotate(-6.5deg);
 }
 
 .Btn-top {
@@ -448,8 +435,8 @@ ul {
     z-index: 60;
     border: none;
     outline: none;
-    background-color: gray;
-    color: white;
+    background-color: #9adbfc;
+    color: #5BA72B;
     cursor: pointer;
     padding: 12px;
     border-radius: 6px;
@@ -473,7 +460,7 @@ ul {
 }
 
 .hro-bttn:hover {
-    background: #000;
+    background: #9ACC44;
 }
 
 .hro-bttn {
@@ -483,15 +470,15 @@ ul {
 .link {
     position: relative;
     z-index: 1;
-    transition: 200ms all;
+    transition: 500ms all;
 }
 
 .link:hover svg circle {
-    stroke: #000;
+    display: none;
 }
 
 .link:hover svg path {
-    fill: #000;
+    fill:#9ACC44;
 }
 
 .fttr-links:hover svg circle {
@@ -528,7 +515,9 @@ ul {
     position: relative;
     z-index: 20 !important;
 }
-
+.mb-unset{
+    margin-bottom: unset !important;
+}
 @media (max-width:992px) {
     .nav-bar-sm {
         position: fixed;
@@ -552,6 +541,25 @@ ul {
 }
 
 @media (min-width:320px) {
+    .fttr-teddy1 {
+        width: 80px;
+    }
+    .fttr-teddy2 {
+        width: 80px;
+    }
+    .fttr-teddy2 {
+        position: absolute;
+        bottom:5%;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .fttr-teddy1 {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        z-index: 1;
+    }
     .heding-sdw {
         text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
         margin-right: -21px;
@@ -565,13 +573,13 @@ ul {
     }
 
     .teddy-only {
-        transform: translateY(45%);
+        transform: translateY(48%);
     }
 
     .stone-trnst {
         position: relative;
         z-index: 7;
-        transform: translateY(71%);
+        transform: translateY(82%);
 
     }
 
@@ -582,6 +590,7 @@ ul {
     }
 
     .cloud-box2 {
+        box-shadow: 15.34152px 15.34152px 4.38329px 0px rgba(0, 0, 0, 0.25);
         background: white;
         padding: 20px;
         border-radius: 20px;
@@ -607,18 +616,9 @@ ul {
         border-radius: 8px !important;
         border-bottom-left-radius: 8px !important;
     }
-
-    .fttr-teddy1 {
-        width: 160px;
-    }
-
-    .fttr-teddy2 {
-        width: 110px;
-    }
-
     .logo {
         width: 110px;
-        height: 60px;
+        height: 40px;
     }
 
     .big-rainbow {
@@ -644,6 +644,26 @@ ul {
         border: none;
     }
 
+}
+
+@media (min-width:992px) {
+    .cloud-box2 {
+        box-shadow:unset !important ;
+
+    }
+    .fttr-teddy2 {
+        position: absolute;
+        bottom:0%;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .fttr-teddy1 {
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        z-index: 1;
+    }
     .fttr-teddy1 {
         width: 210px;
     }
@@ -651,11 +671,24 @@ ul {
     .fttr-teddy2 {
         width: 180px;
     }
-}
 
-@media (min-width:992px) {
+    .herotree-img1 {
+        position: absolute;
+        top: 37%;
+        right: -13%;
+        z-index: 10;
+    }
+    
+    
+    .herotree-img2 {
+        position: absolute;
+        top: 32%;
+        left: -15%;
+        z-index: 10;
+    }
+    
     .section2-height {
-        height: 1050px;
+        height: 850px;
     }
 
     .bg-img {
@@ -668,8 +701,8 @@ ul {
 
     .stone-trnst {
         position: relative;
-        z-index: 3;
-        transform: translateY(-96%);
+        z-index: 5;
+        transform: translateY(-89%);
     }
 
     .grass-trans {
@@ -691,7 +724,7 @@ ul {
     .cloud-box {
         position: relative;
         z-index: 2;
-        transform: translateY(-120%);
+        transform: translateY(-126%);
     }
 
     .cloud-big {
@@ -742,4 +775,31 @@ ul {
         display: block;
     }
 
+}
+@media (min-width:1200px) {
+    .green-tree {
+        position: absolute;
+        bottom: -22%;
+        left: -20%;
+        z-index: 2;
+        display: block;
+    }
+    .section2-height {
+        height: 1050px;
+    }
+    .herotree-img1 {
+        position: absolute;
+        top: 37%;
+        right: -1%;
+        z-index: 10;
+    }
+    
+    
+    .herotree-img2 {
+        position: absolute;
+        top: 32%;
+        left: -1%;
+        z-index: 10;
+    }
+    
 }
