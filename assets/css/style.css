@@ -112,13 +112,6 @@ ul {
     border: none;
 }
 
-.nav-cloud {
-    position: absolute;
-    top: 0%;
-    right: 0;
-}
-
-
 .cloud2 {
     position: absolute;
     top: 12%;
@@ -541,6 +534,11 @@ ul {
 }
 
 @media (min-width:320px) {
+    .nav-cloud {
+        position: absolute;
+        top: 5%;
+        right: 0;
+    }
     .fttr-teddy1 {
         width: 80px;
     }
@@ -777,6 +775,11 @@ ul {
 
 }
 @media (min-width:1200px) {
+    .nav-cloud {
+        position: absolute;
+        top: 0%;
+        right: 0;
+    }
     .green-tree {
         position: absolute;
         bottom: -22%;
